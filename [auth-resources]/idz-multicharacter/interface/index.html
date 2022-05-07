@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>idz-multi</title>
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./index.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="multi-container">
+
+        <a id="chars-amount"></a>
+        <div id="blur-circle"></div>
+        <div id="loader"></div>
+
+        <div id="left-blur">
+            
+        </div>
+        <div id="right-blur">
+            
+        </div>
+
+        <div id="player-card" style="display: none;">
+            <div id="failed-mugshot" style="display: none;">
+                <i class="fas fa-user"></i>
+                <!--
+                    <img src="https://cdn.discordapp.com/attachments/818375239330299945/896402099095629824/unknown.png" alt="">
+                -->
+            </div>
+            <div id="player-data">
+            
+                <a id="player-name"></a>
+                <a id="phone"></a>
+                <a id="gender"></a>
+                <a id="player-job"></a>
+                <a id="citizenid"></a>
+            </div>
+            <div id="card-join">Join</div>
+            <div id="card-delete">Delete</div>
+        </div>
+        
+        <div id="new-char-card" style="display: none;">
+            <a>Create New</a>
+        </div>
+
+        <div id="create-char-container" style="display: none;">
+            <a>CREATE YOUR CHARACTER</a>
+            <div id="divider"></div>
+            <div id="create-char-form">
+                <div id="input-group">
+                    <a>FULL NAME</a>
+                    <input id="input-name" placeholder="Full Name">
+                </div>
+                <div id="input-group">
+                    <a>BIRTHDATE</a>
+                    <input id="input-birth" type="date">
+                </div>
+                <div id="input-group">
+                    <a>NATIONALITY</a>
+                    <input id="input-nationality" placeholder="Nationality">
+                </div>
+                <div id="input-group" class="gender-input">
+                    <a>GENDER</a>
+                    <div id="gender-selector">
+                        <div id="gender-male">MALE</div>
+                        <div id="gender-female" style="background-color: #1D1D1D;">FEMALE</div>
+                    </div>
+                </div>
+            </div>
+            <div id="divider"></div>
+            <div id="create-char">Create</div>
+            <div id="delete-char">Cancel</div>
+        </div>
+
+        <div id="confirm-container" style="display: none;">
+            <a>Are you sure you want to delete this character?</a>
+            <div id="card-confirm">Yes</div>
+            <div id="card-deny">No</div>
+        </div>
+        <i id="move-left" class="fas fa-caret-square-left"></i>
+        <i id="move-right" class="fas fa-caret-square-right"></i>
+    </div>
+</body>
+</html>
